@@ -114,8 +114,7 @@ program
         version = version || '*';
 
         runPromise(
-            manager.install('huntbao/gitbook')
-            .manager.install(version)
+            manager.install(version)
             .then(function(installedVersion) {
                 console.log('');
                 console.log(color.green('GitBook '+installedVersion+' has been installed'));
